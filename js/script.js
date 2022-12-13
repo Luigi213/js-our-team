@@ -35,9 +35,9 @@ let members = [
 let mem = members
 //MILESTONE 1: Stampare su console, per ogni membro del team, le informazioni di nome, ruolo e la stringa della foto
 //MILESTONE 2: Stampare le stesse informazioni su DOM sottoforma di stringhe
+//BONUS 1: Trasformare la stringa foto in una immagine effettiva
+//BONUS 2: Organizzare i singoli membri in card/schede
 for(let i=0; i<members.length; i++){
     let member = members[i]
-    document.querySelector('.information').innerHTML += `<div><img src="${member.photo}" alt=""><p>${member.name}</p><p>${member.role}</p></div>`
+    document.querySelector('.col-information').innerHTML += `<div class="container-card"><img src="${member.photo}" alt=""><h3>${member.name}</h3><p>${member.role}</p></div>`
 }
-
-//BONUS 1: Trasformare la stringa foto in una immagine effettiva

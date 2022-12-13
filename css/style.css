@@ -10,9 +10,47 @@ body{
 
 .row{
     width: 70%;
-    margin: 0 auto;
+    margin: 40px auto;
+}
+
+h2{
+    margin-bottom: 10px;
 }
 
 .col-header{
     text-align: center;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.col-header p{
+    color: #94979C;
+    font-size: 13px;
+    line-height: 27px;
+}
+
+/* main */
+
+.col-information{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.container-card{
+    width: calc(100% / 3 - 20px);
+    margin: 10px;
+    background-color: white;
+    color: #94979C;
+}
+
+.container-card img{
+    width: 100%;
+    margin-bottom: 10px ;
+}
+
+.container-card p:last-child{
+    padding-bottom: 20px ;
+    padding-top: 5px;
+    font-size: 14px;
 }
