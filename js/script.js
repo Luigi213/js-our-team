@@ -3,7 +3,7 @@ let members = [
     {
         name: 'Wayne Barnett',
         role: 'Founder & CEO',
-        photo:  'wayne-barnett-founder-ceo.jpg'
+        photo: 'wayne-barnett-founder-ceo.jpg'
     },
     {
         name: 'Angela Caroll',
@@ -33,12 +33,12 @@ let members = [
 ];
 
 //MILESTONE 1: Stampare su console, per ogni membro del team, le informazioni di nome, ruolo e la stringa della foto
+//MILESTONE 2: Stampare le stesse informazioni su DOM sottoforma di stringhe
 for(let i=0; i<members.length; i++){
     let member = members[i]
     for(let key in member){
-        let card = member[key]
-        document.querySelector('.information').innerHTML += `<p>${card}</p>`
+        document.querySelector('.information').innerHTML += `<p>${member[key]}</p>`
     }
 }
 
-//MILESTONE 2: Stampare le stesse informazioni su DOM sottoforma di stringhe
+//BONUS 1: Trasformare la stringa foto in una immagine effettiva
