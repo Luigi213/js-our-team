@@ -37,7 +37,7 @@ let mem = members
 //MILESTONE 2: Stampare le stesse informazioni su DOM sottoforma di stringhe
 for(let i=0; i<members.length; i++){
     let member = members[i]
-    document.querySelector('.information').innerHTML += `<img src="${member.photo}" alt=""></div><div><p>${member.name}</p><p>${member.role}</p>`
+    document.querySelector('.information').innerHTML += `<div><img src="${member.photo}" alt=""><p>${member.name}</p><p>${member.role}</p></div>`
 }
 
 //BONUS 1: Trasformare la stringa foto in una immagine effettiva
