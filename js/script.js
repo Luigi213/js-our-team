@@ -3,42 +3,41 @@ let members = [
     {
         name: 'Wayne Barnett',
         role: 'Founder & CEO',
-        photo: 'wayne-barnett-founder-ceo.jpg'
+        photo: './img/wayne-barnett-founder-ceo.jpg'
     },
     {
         name: 'Angela Caroll',
         role: 'Chief Editor',
-        photo: 'angela-caroll-chief-editor.jpg'
+        photo: './img/angela-caroll-chief-editor.jpg'
     },
     {
         name: 'Walter Gordon',
         role: 'Office Manager',
-        photo: 'walter-gordon-office-manager.jpg'
+        photo: './img/walter-gordon-office-manager.jpg'
     },
     {
         name: 'Angela Lopez',
         role: 'Social Media Manager',
-        photo: 'angela-lopez-social-media-manager.jpg'
+        photo: './img/angela-lopez-social-media-manager.jpg'
     },
     {
         name: 'Scott Estrada',
         role: 'Developer',
-        photo: 'scott-estrada-developer.jpg'
+        photo: './img/scott-estrada-developer.jpg'
     },
     {
         name: 'Barbara Ramos',
         role: 'Graphic Designer',
-        photo: 'barbara-ramos-graphic-designer.jpg'
+        photo: './img/barbara-ramos-graphic-designer.jpg'
     },  
 ];
 
+let mem = members
 //MILESTONE 1: Stampare su console, per ogni membro del team, le informazioni di nome, ruolo e la stringa della foto
 //MILESTONE 2: Stampare le stesse informazioni su DOM sottoforma di stringhe
 for(let i=0; i<members.length; i++){
     let member = members[i]
-    for(let key in member){
-        document.querySelector('.information').innerHTML += `<p>${member[key]}</p>`
-    }
+    document.querySelector('.information').innerHTML += `<img src="${member.photo}" alt=""></div><div><p>${member.name}</p><p>${member.role}</p>`
 }
 
 //BONUS 1: Trasformare la stringa foto in una immagine effettiva
