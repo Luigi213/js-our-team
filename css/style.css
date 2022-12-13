@@ -3,3 +3,16 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body{
+    background-color: #F5F5F1;
+}
+
+.row{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.col-header{
+    text-align: center;
+}
